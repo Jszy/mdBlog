@@ -16,6 +16,7 @@
 6.git checkout <branch> 切换分支  
 7.git checkout -b <branch> 基于当前分支创建新分支并立刻切换到新分支  
 8.git checkout -b <branch> <base_branch> 基于某个分支创建新分支并立刻切换到新分支  
+9.git checkout -- <fileName>  恢复指定文件 
 9.git branch -d <branch> 删除本地分支  
 10.git push origin --delete <branch> 删除远程分支，或者用：git push origin :<branch>   
 11.git push origin <branch> 创建远程分支或推送本地分支代码到远程分支  
