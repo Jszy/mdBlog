@@ -65,6 +65,10 @@ MongoDB没有创建数据库的命令，但有类似的命令。
 
  db.dropDatabase();
 
+4.删除集合
+
+db.res.drop()
+
 5、从指定主机上克隆数据库
 
  db.cloneDatabase(“127.0.0.1”); 将指定机器上的数据库的数据克隆到当前数据库
