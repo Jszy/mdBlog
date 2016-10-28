@@ -56,7 +56,7 @@ myObject.double = function(){
 myObject.double();
 myObject.value // 6
 ````
-#### extend
+#### extend继承
 ```js
     function extend(Child, Parent) {
 　　　　var F = function(){};
@@ -68,5 +68,18 @@ myObject.value // 6
 ```
 `Child.uber = Parent.prototype;`
 ```txt
-意思是为子对象设一个uber属性，这个属性直接指向父对象的prototype属性。（uber是一个德语词，意思是"向上"、"上一层"。）这等于在子对象上打开一条通道，可以直接调用父对象的方法。这一行放在这里，只是为了实现继承的完备性，纯属备用性质。
+意思是为子对象设一个uber属性，这个属性直接指向父对象的prototype属性。
+（uber是一个德语词，意思是"向上"、"上一层"。）这等于在子对象上打开一条通道，可以直接调用父对象的方法
+。这一行放在这里，只是为了实现继承的完备性，纯属备用性质。
+```
+#### 拷贝继承
+```js
+    function extend2(Child, Parent) {
+　　　　var p = Parent.prototype;
+　　　　var c = Child.prototype;
+　　　　for (var i in p) {
+　　　　　　c[i] = p[i];
+　　　　　　}
+　　　　c.uber = p;
+　　}
 ```
