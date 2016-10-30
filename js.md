@@ -1,4 +1,4 @@
-prototype and __proto__
+prototype and `__proto__`
 ```js
 var Animal = function(){
 	this.top = 'god';
@@ -38,7 +38,7 @@ animal
 Dog.prototype = Animal.prototype;
 Dog.prototype.constructor = Dog;
 ```
-
+contructor
 ```js
 var Bird = function(type){this.name = 'name';this.type = type}
 ==>
