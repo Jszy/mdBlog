@@ -39,3 +39,14 @@ if (true) {
   let tmp;
 }
 ````
+#### 对象冻结，不可改变 Object.freeze
+```js
+var constantize = (obj) => {
+  Object.freeze(obj);
+  Object.keys(obj).forEach( (key, value) => {
+    if ( typeof obj[key] === 'object' ) {
+      constantize( obj[key] );
+    }
+  });
+};
+```
