@@ -50,3 +50,16 @@ var constantize = (obj) => {
   });
 };
 ```
+#### window与全局变量
+```txt
+ES5中 var a = 1;自动挂载在window.a 属性
+ES6中，let const class等全局声明的变量，与window脱节
+```
+```js
+// ES5 
+var a = 1;
+window.a // 1
+// ES6
+let a = 1;
+window.a // undefined
+```
