@@ -1,3 +1,4 @@
+```js
 function compile(template){
   var templateSettings = {
     evaluate: /##([\s\S]+?)##/g,
@@ -24,3 +25,17 @@ function compile(template){
 
   return eval(script);
 }
+
+```
+调用方式
+```js
+let template = `
+  ##for(var i=0;i<list.length;i++){##
+  <span>{{list[i].name}}</span>  
+  ##}##
+`;
+var templateFn = compile( template );
+$('body').append( templateFn({
+  list: [{name: 'jack'}, {name: 'tom'}, {name: 'cat'}]
+}) )
+```
