@@ -17,3 +17,17 @@ var obj4 = JSON.parse( JSON.stringify( obj ) )
 var arr = ['x','y','z'];
 Array.prototype.push.apply( arr, [1,2,3] )
 ```
+类数组与数组之间的转换
+```js
+var obj = {
+  '0': 'jack',
+  '1': 'tom',
+  '2': 'cat'
+}
+for( var key in obj ){
+  if( obj.hasOwnProperty( key ) ){
+    obj.length = (obj.length || 0) + 1;
+  }
+}
+console.log( Array.prototype.slice.call( obj ) )
+```
