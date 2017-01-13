@@ -1,11 +1,18 @@
 ```js
 function compile(template){
-  var evalExpr = /<%=(.+?)%>/g;
-  var expr = /<%([\s\S]+?)%>/g;
+  var templateSettings = {
+    evaluate: /##([\s\S]+?)##/g,
+    interpolate: /\{\{(.+?)\}\}/g,
+    escape: /\{\{\{\{-([\s\S]+?)\}\}\}\}/g
+  };
+  /**
+  var interpolate = /<%=(.+?)%>/g;
+  var evaluate = /<%([\s\S]+?)%>/g;
+  */
 
   template = template
-    .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
-    .replace(expr, '`); \n $1 \n  echo(`');
+    .replace(templateSettings.interpolate, '`); \n  echo( $1 ); \n  echo(`')
+    .replace(templateSettings.evaluate, '`); \n $1 \n  echo(`');
 
   template = 'echo(`' + template + '`);';
 
