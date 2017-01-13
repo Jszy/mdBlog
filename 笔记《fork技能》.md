@@ -11,3 +11,9 @@ var obj3 = $.extend(true,{},obj);
 // 以此为hack
 var obj4 = JSON.parse( JSON.stringify( obj ) )
 ```
+数组push多个数据
+```js
+// 利用apply参数特性，数组自动解析为单个
+var arr = ['x','y','z'];
+Array.prototype.push.apply( arr, [1,2,3] )
+```
