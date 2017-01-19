@@ -17,12 +17,12 @@ initrd (hd0,0)/initrd.lz
 ```
 特别注意，ubuntu-14.04-desktop-i386.iso是你的`iso的名字`  
 下面把准备好的Ubuntu iso镜像文件用压缩软件或者虚拟光驱打开，找到casper文件夹，把里面的initrd.lz和vmlinuz解压到C盘，把.disk文件夹也解压到C盘，然后在把整个iso文件复制到C盘。  
-![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/4.png)  
-`重启` 你就会看到有2个 启动菜单给你选择 我们选择 `NeoGrub 引导加载器` 这个选项。  
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/4.png)  
+`重启` 你就会看到有2个 启动菜单给你选择 我们选择 `NeoGrub 引导加载器` 这个选项  
 ![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/5.jpg)  
 然后稍等待一段时间 就会见到我们想要安装的 Ubuntu了  
-![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/6.jpg)  
-进入桌面后，按 `Ctrl+Alt+T` 打开终端，输入代码:
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/6.jpg)  
+进入桌面后，按 `Ctrl+Alt+T` 打开终端，输入代码:  
 ```txt
 sudo umount -l /isodevice
 ```
@@ -32,4 +32,38 @@ sudo umount -l /isodevice
 ![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/8.png)  
 ![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/9.png)  
 ![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/10.png)  
-![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/11.png)
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/11.png)  
+磁盘分区，看个人情况  
+```txt
+SWAP  8G       (交换空间) 
+/     50G ext4（根分区）
+```
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/12.png)  
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/13.png)  
+有的说自动联网的，最好拔下网线，安装过程中会下载语言包等文件，会要一些时间，认为可以安装好后再下载，有空的就联网安装吧。这里选择不联网安装。  
+部分安装图：  
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/14.png)  
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/15.png)  
+下面的安装选择默认吧，不要改动什么  
+![img](https://raw.githubusercontent.com/brucecham/images/master/raw/ubuntu/15.png)  
+点击 现在重启 即可。  
+### 注意
+```txt
+(1)在选择安装启动引导器的设备时，可以选择我们分好的 / 区，也可以新建一个/boot区。
+
+(2)若重启就会发现原来 Windows进不去了。
+
+打开终端输入命令
+
+sudo gedit /etc/default/grub
+
+修改GRUB_TIMEOUT="10"
+然后在终端中输入sudo update-grub
+update 命令会自动找到 windows 7 启动项。并且自动更新 /boot/grub/grub.cfg 文件。这样重启就能进windows了。
+
+(3)最后进入Windows 7，打开EasyBCD删除安装时改的menu.lst文件，按Remove即可。
+
+然后去我们的c盘 删除vmlinuz，initrd.lz和系统的iso文件。
+
+利用EasyBCD可以更改启动项菜单按Edit Boot Menu按钮，可以选择将Windows7设为默认开机选项。
+```
