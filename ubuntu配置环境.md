@@ -24,3 +24,11 @@ sudo apt-get install google-chrome-stable
 //启动谷歌 Chrome 浏览器
  /usr/bin/google-chrome-stable
 ```
+### 安装sublime3，自带[subl命令](https://www.sublimetext.com/docs/3/osx_command_line.html)
+```txt
+1、sublime 官网下载.deb包
+2、dpkg -i /sublime.deb
+   默认安装在 /opt/sublime-text下
+3、安装package control 需要修改 /opt/sublime-text权限
+   chmod –R 777 /opt/sublime-text
+```
