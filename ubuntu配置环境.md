@@ -34,3 +34,17 @@ sudo apt-get install google-chrome-stable
 4、安装package control 需要修改 /opt/sublime-text权限
    chmod –R 777 /opt/sublime-text
 ```
+### 安装nodejs
+官网下载最新版，解压到指定目录位置，比如 /sofeware
+```python
+```
+配置参数，profile文件
+```
+export NODE_HOME=/home/brucecham/software/node
+export PATH=$PATH:$NODE_HOME/bin
+export NODE_PATH=$NODE_HOME/lib/node_modules
+```
+在.bashrc文件中加入指定命令，使每次启动后，上面的配置文件都会生效
+```txt
+source /etc/profile
+```
