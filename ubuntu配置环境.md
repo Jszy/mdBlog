@@ -29,6 +29,8 @@ sudo apt-get install google-chrome-stable
 1、sublime 官网下载.deb包
 2、dpkg -i /sublime.deb
    默认安装在 /opt/sublime-text下
-3、安装package control 需要修改 /opt/sublime-text权限
+3、查看安装包所在位置
+   dpkg -L sublime-text
+4、安装package control 需要修改 /opt/sublime-text权限
    chmod –R 777 /opt/sublime-text
 ```
