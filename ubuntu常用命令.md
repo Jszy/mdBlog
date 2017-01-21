@@ -18,3 +18,8 @@ cp -r software/node2 software/node3
 cp -rf software/node2 .
 -f 如果目标位置存在重名的，先删除再复制进去，也就是覆盖
 ```
+## vim
+查找替换
+```
+:%s/old/new/g
+```
