@@ -95,3 +95,31 @@ javascript中简单数据类型有 Number String Boolean null undefined，其他
 对象的属性值是可以除了undefined之外的任何值。
 正确的使用原型链，可以减少对象初始化时消耗的时间和内存。
 ```
+## 继承
+#### 伪类模式(构造器 new)本意是向面向对象靠拢，但看起来格格不入。更好的备选方案就是根本不使用new
+#### 原型模式 基于原型的继承，相比来说，比基于类的继承在概念上更简单
+```txt
+纯粹的原型模式中，我们摒弃类，转而专注于对象
+```
+```js
+
+let obj1 = {
+  name: 'obj1',
+  say(){
+    console.log('obj1')
+  }
+}
+
+let obj2 = Object.create( obj1 );
+obj2.name = 'obj2';
+obj2.age = 15;
+
+obj2.say() // obj1
+obj1.name // obj1
+obj1.age // undefined
+```
+这是一种`差异化继承`，通过定制一个新的对象，我们指明它与基于的对象的区别
+
+
+
+
