@@ -47,5 +47,5 @@ let pubsub = {}
     }
   }
   
-})(pubsub);
+}(pubsub));
 ```
