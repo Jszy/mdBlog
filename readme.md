@@ -1,0 +1,1 @@
+[move to it`s wiki page](https://github.com/brucecham/mdBlog/wiki)
