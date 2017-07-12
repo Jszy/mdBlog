@@ -7,4 +7,4 @@ C:\Program Files (x86)\Git\etc\profile.d\aliases.sh
 ```txt
 alias subl='"C:\Program Files\Sublime Text 3\sublime_text.exe" $@ &'
 ```
-![images](./firefork.png)
+![images](./image/firefork.png)
