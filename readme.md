@@ -20,7 +20,6 @@
    - [笔记《高性能网站建设》](./docs/笔记《高性能网站建设》.md)
    - [笔记：Http](./docs/笔记：Http.md)
    - [笔记《js设计模式开发实践》](./docs/笔记《js设计模式开发实践》.md)
-   - [mongodb](./docs/mongodb.md)
 
 - doc 文档
    - [GIT常用命令](./docs/GIT常用命令.md)
