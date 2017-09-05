@@ -35,7 +35,7 @@ function loadScript(url,callback){
       callback();
     }
   }
-  script.src = "file1.js";
+  script.src = url;
   doc.getElementsByTagName('head')[0].appendChild(script); 
 }
 /*
