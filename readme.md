@@ -23,6 +23,7 @@
 
 - doc 文档 
    - [vi常用操作](./docs/vi手册.md) 
+   - [常用命令linux.md](./docs/常用命令linux.md)
    - [GIT常用命令](./docs/GIT常用命令.md)
    - [H5-WebApp-路由机制](./docs/H5-WebApp-路由机制.md)
    - [js测试框架-mocha](./docs/js测试框架-mocha.md)
