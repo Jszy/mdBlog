@@ -23,7 +23,7 @@
 
 - doc 文档 
    - [vi常用操作](./docs/vi手册.md) 
-   - [shell常用命令](./docs/ubuntu常用命令.md)
+   - [shell常用命令](./docs/ubuntu常用命令.md)
    - [linux下命令安装环境](./docs/常用命令linux.md)
    - [GIT常用命令](./docs/GIT常用命令.md)
    - [H5-WebApp-路由机制](./docs/H5-WebApp-路由机制.md)
