@@ -22,14 +22,14 @@
    - [笔记《js设计模式开发实践》](./docs/笔记《js设计模式开发实践》.md)
 
 - doc 文档 
-   - [vi常用操作](./docs/vi手册.md)
+   - [vi常用操作](./docs/vi手册.md) 
+   - [ubuntu常用命令](./docs/ubuntu常用命令.md)
    - [linux下命令安装环境](./docs/常用命令linux.md)
    - [GIT常用命令](./docs/GIT常用命令.md)
    - [H5-WebApp-路由机制](./docs/H5-WebApp-路由机制.md)
    - [js测试框架-mocha](./docs/js测试框架-mocha.md)
    - [markdown简介](./docs/markdown简介.md)
    - [sublime插件](./docs/sublime插件.md)
-   - [ubuntu常用命令](./docs/ubuntu常用命令.md)
    - [ubuntu配置环境](./docs/ubuntu配置环境.md)
    - [util中的路由与url处理(页面路径、文件图片地址等)相关方法](./docs/util中的路由与url处理(页面路径、文件图片地址等)相关方法.md)
    - [window-ubuntu双系统](./docs/window-ubuntu双系统.md)
