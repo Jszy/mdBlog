@@ -30,7 +30,7 @@ cp -rf software/node2 .
 
 <br/>
 
-复制指定文件夹的内容到另外一个文件夹，并过滤掉指定目录不复制 
+复制指定文件夹 `ikcamp` 的内容到另外一个文件夹 `test`，并过滤掉指定目录不复制 
 
 ```txt
 rsync -avP --exclude ./ikcamp/node-modules ikcamp/ test/
