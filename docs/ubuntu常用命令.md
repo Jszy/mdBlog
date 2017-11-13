@@ -38,6 +38,14 @@ rsync -avP --exclude ./ikcamp/node-modules ikcamp/ test/
 
 <br/>
 
+复制指定文件夹 `ikcamp` 的内容到另外一个文件夹 `ikcamp-copy`，并过滤掉指定目录不复制 
+
+```shell
+cd ikcamp
+cp -r `ls | grep -v node_modules` ../ikcamp-copy
+```
+
+
 ## vim
 查找替换
 ```
