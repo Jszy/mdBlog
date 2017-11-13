@@ -48,11 +48,3 @@ rsync -avP --exclude ./ikcamp/node-modules ikcamp/ test/
 cd ikcamp
 cp -r `ls | grep -v node_modules` ../ikcamp-copy
 ```
-
-
-## vim
-查找替换
-
-```shell
-:%s/old/new/g
-```
