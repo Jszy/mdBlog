@@ -1,3 +1,16 @@
+查看端口
+
+```shell
+sudo lsof -i :8090
+```
+
+杀进程
+
+```shell
+sudo kill -9 38789
+```
+
+
 解压文件到指定位置
 
 ```shell
