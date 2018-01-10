@@ -61,3 +61,11 @@ rsync -avP --exclude ./ikcamp/node-modules ikcamp/ test/
 cd ikcamp
 cp -r `ls | grep -v node_modules` ../ikcamp-copy
 ```
+
+</br>
+
+查看 nginx 状态
+
+```shell
+systemctl status nginx.service
+```
