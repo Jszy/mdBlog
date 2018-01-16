@@ -24,7 +24,31 @@ yum localinstall mysql57-community-release-el7-11.noarch.rpm
 yum install mysql-community-server
 ```
 
+</br>
 
+验证数据库：启动
+
+```shell
+systemctl start  mysqld.service
+```
+
+</br>
+
+查看生成的临时账号root和密码
+
+```shell
+grep 'temporary password' /var/log/mysqld.log
+```
+
+</br>
+
+完成安全设置及密码重置
+
+```shell
+mysql_secure_installation
+```
+
+</br>
 
 ## 常用命令
 
