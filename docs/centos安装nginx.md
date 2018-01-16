@@ -29,3 +29,13 @@ yum install nginx
 ```shell
 systemctl start nginx.service
 ```
+
+</br>
+
+引入外部配置文件
+```shell
+vi /etc/nginx/nginx.conf
+
+include /etc/nginx/conf.d/*.conf;
+include /root/home/nginx/conf.d/*.conf;
+```
