@@ -54,6 +54,14 @@ mysql_secure_installation
 
 </br>
 
+查看端口号
+
+```shell
+mysql> show global variables like 'port'
+```
+
+</br>
+
 创建数据库 
 
 ```mysql
