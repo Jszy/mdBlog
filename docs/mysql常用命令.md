@@ -1,3 +1,35 @@
+## 安装 mysql 
+
+</br>
+
+下载 `Yum Repository`，获取 `mysql` [下载地址](https://dev.mysql.com/downloads/repo/yum/)
+
+```shell
+wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+```
+
+</br>
+
+安装 `Yum Repository`
+
+```shell
+yum localinstall mysql57-community-release-el7-11.noarch.rpm
+```
+
+</br>
+
+安装 `mysql`
+
+```shell
+yum install mysql-community-server
+```
+
+
+
+## 常用命令
+
+</br>
+
 创建数据库 
 
 ```mysql
