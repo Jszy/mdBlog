@@ -1,3 +1,12 @@
+显示行数
+
+```shell
+:set nu
+:set nonu
+```
+
+<br/>
+
 强退无保存
 
 ```shell
