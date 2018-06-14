@@ -35,6 +35,16 @@ u
 
 <br/>
 
+查找+高亮
+
+```shell
+/style  回车    n   切换
+:set hlsearch 高亮
+```
+
+
+<br/>
+
 强退无保存
 
 ```shell
