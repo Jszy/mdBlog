@@ -1,4 +1,22 @@
 # GIT常用命令
+## 修改文件迁移分支
+
+将A分支中的修改暂存起来
+
+```shell
+git stash
+```
+
+<br/>
+
+切换到B分支，然后将A分支上的修改弹出到B分支上
+
+```shell
+git stash pop
+```
+
+<br/>
+
 ## 远程仓库
 1.git clone http://git.firstshare.cn/fe/\*.git 克隆远程仓库到本地  
 2.git clone http://git.firstshare.cn/fe-h5/\*.git --recursive 克隆远程仓库到本地，同时递归克隆引用的子模块  
