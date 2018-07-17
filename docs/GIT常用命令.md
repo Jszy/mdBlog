@@ -44,6 +44,7 @@ git stash pop
 15.git tag -a <tag> -m 'xxx' 新建tag  
 16.git push origin <tag> 推送tag到远程  
 17.git checkout -- <fileName> 恢复指定文件
+18.git branch --track <branch> origin/<newbranch> 修改本地分支的源
 
 ## 提交代码
 1.git add <file> 添加修改或新文件到索引  
