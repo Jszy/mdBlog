@@ -97,6 +97,17 @@ git reset 057d
 6.回退到上一次提交的状态，按照某一次的commit完全反向的进行一次commit  
 git revert HEAD  
 
+## git reset 某次提交 
+
+```git
+// 回退到指定版本
+git reset --hard commit_id
+
+// 强制提交
+git push origin HEAD --force
+```
+
+
 ## git commit 提交时候，配置信息与push时候不匹配  
 需要修改的话，运行下面命令  
 注意把`old name`和`new name`、`new email`修改成相应的真实数据 
