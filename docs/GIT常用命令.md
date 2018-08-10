@@ -76,6 +76,7 @@ git stash pop
 7.git config --global alias.sp 'stash pop'  
 8.git config --global alias.la 'pull --rebase'  
 9.git config --global alias.ti 'push origin HEAD'  
+10.git config commit.template ../git_commit.template    
 
 ## git reset：
 
